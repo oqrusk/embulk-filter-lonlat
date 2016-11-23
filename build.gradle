@@ -24,6 +24,7 @@ dependencies {
     provided "org.embulk:embulk-core:0.8.15"
     // compile "YOUR_JAR_DEPENDENCY_GROUP:YOUR_JAR_DEPENDENCY_MODULE:YOUR_JAR_DEPENDENCY_VERSION"
     testCompile "junit:junit:4.+"
+    testCompile "org.embulk:embulk-core:0.8.15:tests" // <= コレ!!
 }
 
 task classpath(type: Copy, dependsOn: ["jar"]) {
